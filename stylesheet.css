@@ -1,0 +1,74 @@
+fieldset {
+    display: block;
+	margin: auto;
+	width: 300px;
+	height:250 px;
+	padding-left: 75px;
+	padding-right: 100px;
+	padding-bottom: 50px;    
+}
+
+label{
+	text-align: left;
+	width: 115px;
+	float: left;	
+	font-size: 20px;	
+}
+
+span, .required{
+	color: #8B0000;
+	font-weight: bold;
+
+}
+
+legend {
+	font-size: 30px;
+	 background-color: white;
+	 color: black;
+	 width: 100%;
+	 text-align:center;	 
+	 padding-bottom: 0.75em;
+}
+
+#loginbutton {
+	background-color: black;
+	color: white;
+	border-radius: 15%;
+	border-color: aqua;
+	width: 100px;
+	height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.section3 {
+   text-align: center;
+   top: 30%;   
+}
+
+input {
+   width: 150px;
+   border-color: black;
+   align: left;
+   font-size: 15px;
+}
+
+
+*{
+font-family: "Calibri", Times, serif;
+}
+
+.instructions { width:550px; margin:0px auto;}
+
+h1 {
+text-align:center;
+}
+
+h2 {
+text-align:left;
+}
+
+.red-border {
+     border-color: red;
+	 border-width: thick;
+}

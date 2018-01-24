@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Login Page</title>
+<link rel='stylesheet' href='stylesheet.css' type='text/css' />
+
+<script src="validation.js"></script>
+</head>
+<body onload="document.registration.username.focus();">
+
+
+<main>
+<h1>Login Page</h1>
+<div class="instructions">
+<section>
+	<h2>Instructions for filling the login form</h2>
+	The user name field is required and has to be compliant with the following rules:
+	<ul><li>The length of the user name must be between 6 and 15 characters. </li>
+		<li>The username must contain following types of characters
+		<ol><li>English uppercase letters [A-Z]</li>
+			<li>English lowercase letters [a-z]</li>
+			<li>Arabic numerals [0-9]</li>
+		</ol>
+		</li>
+	</ul>	
+	The password field is required and has to be compliant with the following rules:
+	<ul><li>The length of the password must be between 8 and 12 characters. </li>
+		<li>The password must contain following types of characters
+		<ol><li>Atleast one english uppercase letter [A-Z]</li>
+			<li>Atleast one english lowercase letter [a-z]</li>
+			<li>Atleast one arabic numeral [0-9]</li>
+		</ol>
+		</li>
+	</ul>
+</section>
+</div>
+<form id='regForm' name="registration" method="post" onSubmit="return formValidation();" >
+
+	<fieldset>
+	<div>
+	<legend>Login</legend> </div>
+	<p><span>* </span> Denotes required fields.</p>
+		<div>
+			<label for="username"><span title="Required Field">* </span>User name:</label>
+			<input type="text" name="username" id="username" title="Username must contain alphanumeric and must be between 6 and 15 characters" oninput="border_update('username')"/>
+		</div>
+		<p>
+			<div>
+				<label for="password"><span title="Required Field">* </span>Password:</label>
+				<input type="password" name="password" id="password" title="Password must contain at least one number, one uppercase, one lowercase letter and must be between 8 and 12 characters" oninput="border_update('password')"/>
+			</div>
+		</p>
+		<div class="section3">
+			<input type="submit" id="loginbutton" name="login" value="Log In"/>
+		</div>
+	</fieldset>
+	</form>
+</main>
+</body>
+</html>
